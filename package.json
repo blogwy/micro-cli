@@ -1,0 +1,28 @@
+{
+  "name": "rui-micro-cli",
+  "version": "1.0.0",
+  "author": "zhouwei <zhouwei@smartahc.com>",
+  "license": "MIT",
+  "bin": {
+    "mic-cli": "bin/micro.js"
+  },
+  "keywords": ["rui", "cli", "micro frontend"],
+  "scripts": {
+    "build": "webpack --entry ./bin/micro.js --output-library ./lib/index.js --mode production"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "download-git-repo": "^3.0.2",
+    "glob": "^7.1.6",
+    "handlebars": "^4.5.3",
+    "inquirer": "^7.0.1",
+    "metalsmith": "^2.3.0",
+    "ora": "^4.0.3",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
+  }
+}
