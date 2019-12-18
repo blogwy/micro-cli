@@ -7,7 +7,6 @@ const Handlebars = require('handlebars')
 const rm = require('rimraf').sync
 
 module.exports = function (content) {
-  console.log(content);
   const metadata = content.metadata;
   const src = content.downloadTemp
   const dest = './' + content.root;

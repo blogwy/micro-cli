@@ -8,7 +8,6 @@ const ora = require('ora')
 
 module.exports = function (target) {
   target = path.join(target || '.', '.download-temp')
-  console.log(target);
   return new Promise(function (resolve, reject) {
     const spinner = ora(`Downloading project template...`)
     spinner.start();

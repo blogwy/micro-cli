@@ -96,11 +96,6 @@ function go() {
       shelljs.exit()
     })
   }).then(context => {
-    console.log(context);
-    console.log(path.join(process.cwd(), context.root))
-    console.log(fs.existsSync(path.join(process.cwd(), context.root)))
-    // shelljs.exec('ls')
-    shelljs.exec(`cd ${path.join(process.cwd(), context.root)} && ls`)
     shelljs.exec(`cd ${path.join(process.cwd(), context.root)} && yarn`, { async: true, encoding: 'utf-8' }, (code, stdout, stderr) => {
       console.log('Exit code:', code);
       console.log('Program output:', stdout);
