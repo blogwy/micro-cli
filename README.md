@@ -7,5 +7,5 @@ smartAHC micro frond-end cli
 ### create
 
 ```sh
-mic-cli create your-porject-name
+micro-cli create your-porject-name
 ```
