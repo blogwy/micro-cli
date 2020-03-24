@@ -1,10 +1,10 @@
 {
   "name": "rui-micro-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "zhouwei <zhouwei@smartahc.com>",
   "license": "MIT",
   "bin": {
-    "mic-cli": "bin/micro.js"
+    "mic-cli": "./bin/micro.js"
   },
   "keywords": [
     "rui",
