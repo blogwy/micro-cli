@@ -22,10 +22,6 @@ module.exports = function (content) {
       .destination(dest)
       .use((files, metalsmith, done) => {
         const meta = metalsmith.metadata()
-        // Object.keys(files).forEach(fileName => {
-        //   const t = files[fileName].contents.toString()
-        //   files[fileName].contents = new Buffer(Handlebars.compile(t)(meta))
-        // })
         const t = files['package.json'].contents.toString()
         files['package.json'].contents = Buffer.from(Handlebars.compile(t)(meta))
         done()
