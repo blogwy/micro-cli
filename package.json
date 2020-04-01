@@ -1,6 +1,6 @@
 {
   "name": "rui-micro-cli",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "zhouwei <zhouwei@smartahc.com>",
   "license": "MIT",
   "bin": {
