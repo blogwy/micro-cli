@@ -26,10 +26,12 @@ module.exports = function (content) {
         const d = files['deploy.sh'].contents.toString()
         const m = files['micro-config.js'].contents.toString()
         const r = files['README.md'].contents.toString()
+        const i = files['public/index.html'].contents.toString()
         files['package.json'].contents = Buffer.from(Handlebars.compile(t)(meta))
         files['deploy.sh'].contents = Buffer.from(Handlebars.compile(d)(meta))
         files['micro-config.js'].contents = Buffer.from(Handlebars.compile(m)(meta))
         files['README.md'].contents = Buffer.from(Handlebars.compile(r)(meta))
+        files['public/index.html'].contents = Buffer.from(Handlebars.compile(i)(meta))
         done()
       }).build(err => {
         rm(src)
